@@ -1,0 +1,16 @@
+package layouts
+
+import "templ-test/views/components"
+
+templ Base() {
+	<html>
+		<head></head>
+		<body>
+			<div>
+				Base layout
+			</div>
+			{ children... }
+            @components.Footer()
+		</body>
+	</html>
+}
